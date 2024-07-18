@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #boxs{
+        border: 1px solid white;
+        display: grid;
+        width: 1000px;
+        height: 600px;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+        padding: 10px;
+        justify-content: center;
+        grid-template-areas:
+        "one one three three"
+        "five six six six "
+        "nine nine nine nine"
+        ;
+        
+
+    }
+    #boxs>div{
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: rgb(80, 76, 76);
+        color: aliceblue;
+    }
+    #boxs>div:nth-child(1){
+        grid-area: one;
+
+    }
+    #boxs>div:nth-child(2){
+        grid-area: two;
+    }
+    #boxs>div:nth-child(3){
+        grid-area: three;
+    }
+    #boxs>div:nth-child(4){
+        grid-area: four ;
+    }
+    #boxs>div:nth-child(5){
+        grid-area: five;
+    }
+    #boxs>div:nth-child(6){
+        grid-area:six ;
+    }
+    #boxs>div:nth-child(7){
+        grid-area: seven;
+    }
+    #boxs>div:nth-child(8){
+        grid-area: eight;
+    }
+    #boxs>div:nth-child(9){
+        grid-area: nine;
+    }
+    #boxs>div:nth-child(10){
+        grid-area:ten ;
+    }
+    #boxs>div:nth-child(11){
+        grid-area:ele;
+    }
+    #boxs>div:nth-child(12){
+        grid-area:twl ;
+    }
+
+    
+</style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="boxs">
+    <div>A</div>
+    <div></div>
+    <div>B</div>
+    <div></div>
+    <div>C</div>
+    <div>D</div>
+    <div></div>
+    <div></div>
+    <div>E</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    
+</body>
+</html>
